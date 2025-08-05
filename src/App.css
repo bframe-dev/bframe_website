@@ -1,0 +1,317 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.product-configuration-section {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: stretch;
+}
+
+.product-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: center center/cover no-repeat url('/assets/product.png');
+  z-index: 1;
+}
+
+.product-overlay {
+  position: relative;
+  top: 0; left: 0; bottom: 0;
+  width: 35%;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.product-content {
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.product-content .contact-btn,
+.digital-human-content .contact-btn {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+
+.product-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: auto;
+}
+
+.product-content p.section-desc,
+.digital-human-content p.section-desc {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+  color: #e0e0e0;
+  line-height: 1.5; 
+  text-align: left;
+}
+
+.contact-btn {
+  margin-top: auto;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+}
+.contact-btn:hover {
+  background: #e65c50;
+}
+
+.demo-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  background: #61dafb;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+  font-weight: 500;
+}
+.demo-btn:hover {
+  background: #21a1c4;
+  color: #fff;
+}
+
+.digital-human-section {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: stretch;
+}
+
+.digital-human-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: center center/cover no-repeat url('/assets/digital_human.jpg');
+  z-index: 1;
+}
+
+.digital-human-overlay {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 35%;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.digital-human-content {
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.digital-human-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: auto;
+}
+
+@media (max-width: 900px) {
+  .product-overlay,
+  .digital-human-overlay {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-configuration-section,
+  .digital-human-section {
+    height: 40vh;
+    min-height: 220px;
+  }
+  .product-overlay,
+  .digital-human-overlay {
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+  }
+  .product-content,
+  .digital-human-content {
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+  .product-content h1,
+  .digital-human-content h1 {
+    font-size: 1.5rem;
+  }
+  .contact-btn {
+    width: 100%;
+  }
+}
+
+.site-footer {
+  width: 100%;
+  background: #222;
+  color: #eee;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+.company-name {
+  font-weight: bold;
+}
+.company-email {
+  color: #ff6f61;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+.company-email:hover {
+  text-decoration: underline;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #fff;
+  color: #222;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: left;
+  position: relative;
+}
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.modal-info {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+.modal label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.modal input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.modal-terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.modal-terms input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+.modal-terms label {
+  font-size: 0.95rem;
+  color: #333;
+}
+.modal-terms a {
+  color: #61dafb;
+  text-decoration: underline;
+}
+.modal-submit {
+  background: #61dafb;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.2s;
+}
+.modal-submit:disabled {
+  background: #b3eafc;
+  color: #888;
+  cursor: not-allowed;
+}
+.modal-success {
+  color: #21a1c4;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
