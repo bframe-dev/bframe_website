@@ -58,26 +58,13 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className="main-layout">
-      <section className="product-configuration-section">
-        <div className="product-bg" />
-        <div className="product-overlay">
-          <div className="product-content">
-            <div>
-                          <h1>Product Configurator</h1>
-            <p className="section-desc">A real-time, interactive product configurator streamed directly to any device, letting users customize and explore products with high fidelity, instantly.</p>
-            </div>
-            <button className="demo-btn" onClick={() => setModalOpen(true)}>Request a Demo</button>
-          </div>
-        </div>
-      </section>
       <section className="digital-human-section">
         <div className="digital-human-bg" />
         <div className="digital-human-overlay">
           <div className="digital-human-content">
-            <div><h1>Digital Human</h1>
-            <p className="section-desc">A lifelike, AI-powered digital human streamed to any device, enabling natural, real-time interaction for customer support, guidance, or engagement.</p>
+            <div><h1>Digital Humans</h1>
+            <p className="section-desc">Lifelike, AI-powered digital humans streamed to any device, enabling natural, real-time interaction for customer support, guidance, or engagement.</p>
             </div>
-            <button className="demo-btn" onClick={() => setModalOpen(true)}>Request a Demo</button>
           </div>
         </div>
       </section>
