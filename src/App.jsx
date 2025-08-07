@@ -58,16 +58,6 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className="main-layout">
-      <section className="digital-human-section">
-        <div className="digital-human-bg" />
-        <div className="digital-human-overlay">
-          <div className="digital-human-content">
-            <div><h1>Digital Humans</h1>
-            <p className="section-desc">Lifelike, AI-powered digital humans streamed to any device, enabling natural, real-time interaction for customer support, guidance, or engagement.</p>
-            </div>
-          </div>
-        </div>
-      </section>
       <footer className="site-footer">
         <div className="footer-content">
           <span className="company-name">bFrame</span> &nbsp;|&nbsp;
